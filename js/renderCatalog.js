@@ -8,8 +8,8 @@ async function getProductsData() {
 }
 
 function render(productsData) {
-  console.log(productsData);
   let HTMLTemplate = ``;
+
   productsData.forEach((product) => {
     let cardTemplate = `
       <div class="card">
@@ -24,7 +24,7 @@ function render(productsData) {
       </div>`;
     HTMLTemplate += cardTemplate;
   });
+
   const catalogEl = document.querySelector("#catalog");
-  console.log(catalogEl);
   catalogEl.innerHTML = HTMLTemplate;
 }

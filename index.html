@@ -37,6 +37,33 @@
 
   <body>
     <div class="container">
+      <div class="cart hidden" id="cart">
+        <div class="cart__empty-text">
+          <span> Your cart is empty.</span>
+          <a href="#catalog" class="cart__link">Let's buy some clothes!</a>
+        </div>
+        <!--  -->
+        <div class="cart-product">
+          <img
+            src="img/products/1.jpg"
+            class="cart-product__img"
+            alt=""
+            height="125"
+            width="75"
+          />
+          <div class="cart-product__content">
+            <span class="cart-product__name">Lorem, ipsum.</span>
+            <div class="cart-product__bottom">
+              <span class="cart-product__price">10$</span>
+              <button class="cart-product__button" id="1">
+                <i class="fi fi-br-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+
       <header class="header">
         <nav class="nav">
           <ul class="nav__list">
@@ -53,16 +80,15 @@
               <a href="" class="nav__link">Kids</a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">
-                <div class="nav__group">
-                  <button class="nav__button">
-                    <i class="fi fi-br-user"></i>
-                  </button>
-                  <button class="nav__button">
-                    <i class="fi fi-br-shopping-cart"></i>
-                  </button>
-                </div>
-              </a>
+              <div class="nav__group">
+                <button class="nav__button">
+                  <i class="fi fi-br-user"></i>
+                </button>
+                <button class="nav__button" id="cart-button">
+                  <i class="fi fi-br-shopping-cart" id="icon-cart"></i>
+                  <i class="fi fi-br-cross-small hidden" id="icon-cross"></i>
+                </button>
+              </div>
             </li>
           </ul>
         </nav>
@@ -96,6 +122,7 @@
         <div id="catalog" class="catalog"></div>
       </main>
     </div>
+    <script src="js/showCart.js"></script>
     <script src="js/renderCatalog.js"></script>
   </body>
 </html>

@@ -13,13 +13,22 @@
   }
 }
 
+/* Common classes */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
+/* UI */
+
 .container {
+  position: relative;
   width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -162,13 +171,14 @@
 }
 
 .card__img {
-  border-radius: 15px;
+  margin: 0 0 10px 0;
 }
 
 .card__name {
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-size: 1.5vw;
+  margin: 0 0 10px 0;
 }
 
 .card__bottom {
@@ -188,4 +198,66 @@
   border: none;
   font-size: 1vw;
   color: #000;
+}
+
+.cart {
+  border-radius: 10px;
+  background: #fff;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.cart__empty-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: #eee;
+  font-size: 1.5vw;
+  padding: 15px;
+  border-radius: 5px;
+  /* !!! */
+  display: none;
+  /* !!! */
+}
+
+.cart__link {
+  margin: 15px 0 0 0;
+  color: #ff70a6;
+  text-decoration: none;
+}
+
+.cart-product {
+  display: flex;
+}
+
+.cart-product__img {
+  margin: 0 30px 0 0;
+}
+.cart-product__content {
+  display: flex;
+  flex-direction: column;
+}
+.cart-product__name {
+  font-size: 1.75vw;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 15px 0;
+}
+.cart-product__bottom {
+  display: flex;
+  align-content: baseline;
+  justify-content: space-between;
+}
+.cart-product__price {
+  font-size: 1.2vw;
+  margin: 0 15px 0 0;
+  font-family: "Roboto", sans-serif;
+}
+.cart-product__button {
+  font-size: 1.2vw;
+  background: none;
+  border: none;
+  outline: none;
 }
