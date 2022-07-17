@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Men's T-shirt",
+    "id": "1",
+    "price": "20$",
+    "category": "men",
+    "imgSrc": "img/products/1.jpg"
+  },
+  {
+    "name": "Women's T-shirt",
+    "id": "2",
+    "price": "15$",
+    "category": "women",
+    "imgSrc": "img/products/2.jpg"
+  },
+  {
+    "name": "Men's jacket",
+    "id": "3",
+    "price": "150$",
+    "category": "men",
+    "imgSrc": "img/products/3.jpg"
+  },
+  {
+    "name": "Women's jacket",
+    "id": "4",
+    "price": "100$",
+    "category": "women",
+    "imgSrc": "img/products/4.jpg"
+  },
+  {
+    "name": "Kids's T-shirt",
+    "id": "5",
+    "price": "10$",
+    "category": "kids",
+    "imgSrc": "img/products/5.jpg"
+  },
+  {
+    "name": "Kids's jacket",
+    "id": "6",
+    "price": "115$",
+    "category": "kids",
+    "imgSrc": "img/products/6.jpg"
+  },
+  {
+    "name": "Men's boots",
+    "id": "7",
+    "price": "75$",
+    "category": "men",
+    "imgSrc": "img/products/7.jpg"
+  },
+  {
+    "name": "Women's boots",
+    "id": "8",
+    "price": "100$",
+    "category": "women",
+    "imgSrc": "img/products/8.jpg"
+  },
+  {
+    "name": "Kids's boots",
+    "id": "9",
+    "price": "45$",
+    "category": "kids",
+    "imgSrc": "img/products/9.jpg"
+  },
+  {
+    "name": "Men's jeans",
+    "id": "10",
+    "price": "40$",
+    "category": "men",
+    "imgSrc": "img/products/10.jpg"
+  },
+  {
+    "name": "Woman's jeans",
+    "id": "11",
+    "price": "45$",
+    "category": "women",
+    "imgSrc": "img/products/11.jpg"
+  },
+  {
+    "name": "Kids's trousers",
+    "id": "12",
+    "price": "30$",
+    "category": "kids",
+    "imgSrc": "img/products/12.jpg"
+  }
+]
