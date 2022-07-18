@@ -17,7 +17,7 @@ function render(productsData) {
         <span class="card__name">${product.name}</span>
         <div class="card__bottom">
           <span class="card__price">${product.price}</span>
-          <button class="card__button" id="${product.id}">
+          <button class="card__button" data-add id="${product.id}">
             <i class="fi fi-br-shopping-cart-add"></i>
           </button>
         </div>

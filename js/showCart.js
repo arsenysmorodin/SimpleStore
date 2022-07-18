@@ -1,10 +1,12 @@
-let cartButton = document.querySelector("#cart-button");
-let iconCart = cartButton.querySelector("#icon-cart");
-let iconCross = cartButton.querySelector("#icon-cross");
-let cartEl = document.querySelector("#cart");
+const cartDOM = {
+  button: document.querySelector("#cart-button"),
+  iconCart: document.querySelector("#icon-cart"),
+  iconCross: document.querySelector("#icon-cross"),
+  el: document.querySelector("#cart"),
+};
 
-cartButton.addEventListener("click", (event) => {
-  cartEl.classList.toggle("hidden");
-  iconCart.classList.toggle("hidden");
-  iconCross.classList.toggle("hidden");
+cartDOM.button.addEventListener("click", (event) => {
+  cartDOM.el.classList.toggle("hidden");
+  cartDOM.iconCart.classList.toggle("hidden");
+  cartDOM.iconCross.classList.toggle("hidden");
 });
