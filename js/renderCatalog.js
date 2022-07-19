@@ -6,12 +6,12 @@ async function getProductsData() {
   const response = await fetch(`../js/products.json`);
   const productsData = await response.json();
 
-  render(productsData);
+  renderCatalog(productsData);
 
   products = productsData;
 }
 
-function render(productsData) {
+function renderCatalog(productsData) {
   let HTMLTemplate = ``;
 
   productsData.forEach((product) => {
