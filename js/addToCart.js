@@ -31,4 +31,5 @@ catalog.addEventListener("click", (event) => {
       console.log(cartFinished);
     }
   }
+  // renderCart(cartFinished);
 });

@@ -231,6 +231,7 @@
 
 .cart-product {
   display: flex;
+  margin: 0 0 20px 0;
 }
 
 .cart-product__img {
@@ -251,6 +252,11 @@
   justify-content: space-between;
 }
 .cart-product__price {
+  font-size: 1.2vw;
+  margin: 0 15px 0 0;
+  font-family: "Roboto", sans-serif;
+}
+.cart-product__amound {
   font-size: 1.2vw;
   margin: 0 15px 0 0;
   font-family: "Roboto", sans-serif;
