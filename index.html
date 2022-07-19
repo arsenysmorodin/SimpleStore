@@ -46,18 +46,20 @@
 
       <header class="header">
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav__list" id="nav">
             <li class="nav__logo">
               <a href="" class="nav__link">SimpleStore</a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">Men</a>
+              <a href="#catalog" class="nav__link" data-category="men">Men</a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">Women</a>
+              <a href="#catalog" class="nav__link" data-category="women"
+                >Women</a
+              >
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">Kids</a>
+              <a href="#catalog" class="nav__link" data-category="kids">Kids</a>
             </li>
             <li class="nav__item">
               <div class="nav__group">
@@ -107,5 +109,6 @@
     <script src="js/addToCart.js"></script>
     <script src="js/renderCart.js"></script>
     <script src="js/removeFromCart.js"></script>
+    <script src="js/filterCatalog.js"></script>
   </body>
 </html>

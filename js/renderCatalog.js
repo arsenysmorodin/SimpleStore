@@ -1,10 +1,14 @@
 getProductsData();
 
+let products = null;
+
 async function getProductsData() {
   const response = await fetch(`../js/products.json`);
   const productsData = await response.json();
 
   render(productsData);
+
+  products = productsData;
 }
 
 function render(productsData) {
