@@ -2,7 +2,14 @@ let cart = [];
 let cartFinished = [];
 let catalog = document.querySelector("#catalog");
 
+function closeCart() {
+  cartDOM.el.classList.add("hidden");
+  cartDOM.iconCart.classList.remove("hidden");
+  cartDOM.iconCross.classList.add("hidden");
+}
+
 catalog.addEventListener("click", (event) => {
+  closeCart();
   if (event.target.closest("[data-add]")) {
     let productToCart = {
       id: event.target.closest("[data-add]").getAttribute("id"),
@@ -31,5 +38,4 @@ catalog.addEventListener("click", (event) => {
       console.log(cartFinished);
     }
   }
-  // renderCart(cartFinished);
 });
